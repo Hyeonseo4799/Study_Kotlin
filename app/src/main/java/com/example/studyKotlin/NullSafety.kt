@@ -20,8 +20,8 @@ class NullSafety : AppCompatActivity() {
         //  val number3 = number + number1?
         val number3 = number1?.plus(number)
         // !! -> 개발자가  null이 아님을 보장
-        var number5: Int = number1!! + 10
-        Log.d("number", "number3 : $number3")
+//        var number5: Int = number1!! + 10
+//        Log.d("number", "number3 : $number3")
 
         // 삼항 연산자 -> 엘비스 연산자(?:)
         // Null Safety를 위한 도구
