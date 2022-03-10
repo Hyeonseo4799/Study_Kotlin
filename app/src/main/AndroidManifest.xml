@@ -3,6 +3,7 @@
     package="com.example.studyKotlin">
 
     <permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Study_Kotlin">
-        <activity android:name=".LibraryActivity" android:exported="true">
+        <activity android:name=".PhoneBookActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,10 +19,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ThreadActivity"
+            android:name=".AddViewActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".Context"></activity>
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ThreadActivity"
+            android:exported="true" />
+        <activity android:name=".Context" />
         <activity
             android:name=".Resource"
             android:exported="true" />
